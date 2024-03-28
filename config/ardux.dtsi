@@ -4,6 +4,15 @@
  * SPDX-License-Identifier: MIT
  */
 
+&pinctrl {
+    i2c1_default: i2c1_default {
+        group1 {
+            pinmux = <I2C1_SDA_GPIO20>,
+                     <I2C1_SCL_GPIO22>;
+        };
+    };
+};
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
