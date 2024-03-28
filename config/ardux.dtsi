@@ -4,6 +4,10 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+
 &pinctrl {
     i2c1_default: i2c1_default {
         group1 {
@@ -13,9 +17,6 @@
     };
 };
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 /*****************************************
  * Macros for filling in "&none" in the right places in the keymap for re-use needs
