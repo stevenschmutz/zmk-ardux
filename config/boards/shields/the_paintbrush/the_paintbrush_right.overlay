@@ -15,7 +15,9 @@
 		label = "DISPLAY";
 		width = <128>;
 		height = <32>;
-		segment-offset = <0>;
+        sda-pin = <20>; // oled 20 - nice!nano pin 107 https://www.reddit.com/r/zmk/comments/160l9ur/help_zmk_nicenano_v2_with_an_i2c_128x32_oled_oled/ 
+        scl-pin = <22>; // oled 22 - nice!nano pin 102 
+        segment-offset = <0>;
 		page-offset = <0>;
 		display-offset = <0>;
 		multiplex-ratio = <31>;
