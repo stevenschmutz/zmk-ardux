@@ -184,10 +184,10 @@
 #define ARDUX_BASE_T T
 #define ARDUX_BASE_S S
 #define ARDUX_BASE_E E
-#define ARDUX_BASE_Y Y
+#define ARDUX_BASE_Y N
 #define ARDUX_BASE_I I
 #define ARDUX_BASE_O O
-#define ARDUX_COMBO_N N
+#define ARDUX_COMBO_N Y
 #if ARDUX_COLEMAK
 #define ARDUX_BASE_A T
 #define ARDUX_BASE_R S
