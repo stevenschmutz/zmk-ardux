@@ -153,9 +153,9 @@
 			label = "Custom";                                          \
 			bindings = <                                               \
 				LEADING_NONES                                          \
-				&kp C_MUTE &kp INS   &kp C_VOL_UP  &none               \
+				&kp C_PLAY &kp C_MUTE  &kp C_VOL_UP  &none               \
 				MIDDLE_NONES                                           \
-				&sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
+				&sk C_PREVIOUS  &kp C_NEXT C_VOL_DN  &mo LAYER_ID_CUSTOM \
 				TRAILING_NONES                                         \
 			>;                                                         \
 		};
@@ -366,9 +366,9 @@
 			label = "Symbol";
 			bindings = <
 				LEADING_NONES
-				&kp EXCL                                            &kp BSLH  &kp SEMI  &kp GRAVE
+				&kp HASH                                            &kp GRAVE  &kp SEMI  &kp SLASH
 				MIDDLE_NONES
-				&mo LAYER_ID_SYMBOLS                                &kp QMARK &kp MINUS &kp EQUAL
+				&mo LAYER_ID_SYMBOLS                                &kp AT &kp MINUS &kp EQUAL
 				TRAILING_NONES
 			>;
 		};
@@ -376,9 +376,9 @@
 			label = "Paren";
 			bindings = <
 				LEADING_NONES
-				&mo LAYER_ID_PARENTHETICALS                         &kp LPAR  &kp RPAR  &kp LBRC
+				&mo LAYER_ID_PARENTHETICALS                         &kp LPAR  &kp LBKT  &kp LBRC
 				MIDDLE_NONES
-				&none                                               &kp LBKT  &kp RBKT  &kp RBRC
+				&none                                               &kp RPAR  &kp RBKT  &kp RBRC
 				TRAILING_NONES
 			>;
 		};
