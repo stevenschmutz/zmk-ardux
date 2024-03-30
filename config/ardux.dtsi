@@ -155,7 +155,7 @@
 				LEADING_NONES                                          \
 				&kp C_PLAY &kp C_MUTE  &kp C_VOL_UP  &none               \
 				MIDDLE_NONES                                           \
-				&sk C_PREVIOUS  &kp C_NEXT C_VOL_DN  &mo LAYER_ID_CUSTOM \
+				&sk C_PREVIOUS  &kp C_NEXT &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
 				TRAILING_NONES                                         \
 			>;                                                         \
 		};
@@ -366,7 +366,7 @@
 			label = "Symbol";
 			bindings = <
 				LEADING_NONES
-				&kp HASH                                            &kp GRAVE  &kp SEMI  &kp SLASH
+				&kp HASH                                            &kp GRAVE  &kp SEMI  &kp BSLH
 				MIDDLE_NONES
 				&mo LAYER_ID_SYMBOLS                                &kp AT &kp MINUS &kp EQUAL
 				TRAILING_NONES
