@@ -378,7 +378,7 @@
 				LEADING_NONES
 				&mo LAYER_ID_PARENTHETICALS                         &kp LPAR  &kp LBKT  &kp LBRC
 				MIDDLE_NONES
-				&kp COLON                                           &kp RPAR  &kp RBKT  &kp RBRC
+				&none                                               &kp RPAR  &kp RBKT  &kp RBRC
 				TRAILING_NONES
 			>;
 		};
