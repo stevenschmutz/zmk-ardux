@@ -153,9 +153,9 @@
 			label = "Custom";                                          \
 			bindings = <                                               \
 				LEADING_NONES                                          \
-				&kp C_MUTE &kp INS   &kp C_VOL_UP  &none               \
+				&kp C_PLAY &kp C_MUTE  &kp C_VOL_UP  &none               \
 				MIDDLE_NONES                                           \
-				&sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
+				&sk C_PREVIOUS  &kp C_NEXT &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
 				TRAILING_NONES                                         \
 			>;                                                         \
 		};
@@ -184,10 +184,10 @@
 #define ARDUX_BASE_T T
 #define ARDUX_BASE_S S
 #define ARDUX_BASE_E E
-#define ARDUX_BASE_Y Y
+#define ARDUX_BASE_Y N
 #define ARDUX_BASE_I I
 #define ARDUX_BASE_O O
-#define ARDUX_COMBO_N N
+#define ARDUX_COMBO_N Y
 #if ARDUX_COLEMAK
 #define ARDUX_BASE_A T
 #define ARDUX_BASE_R S
@@ -235,11 +235,12 @@
 		combo_alt        { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_S>; bindings = <&sk LALT>; };
 		combo_backspace  { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_R>; bindings = <&kp BACKSPACE>; };
 		combo_delete     { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_R>; bindings = <&kp DELETE>; };
-		combo_shift_lock { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kt LSHFT>; };
+		combo_quote { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_N>; bindings = <&kp SQT>; };
+		combo_question { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_O>; bindings = <&kp QUESTION>; };
 
 		combo_b           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_O>; bindings = <&kp B>; };
-		combo_c           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_Y>; bindings = <&kp C>; };
-		combo_n           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp ARDUX_COMBO_N>; };
+		combo_c           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_N>; bindings = <&kp C>; };
+		combo_y           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp ARDUX_COMBO_N>; };
 		combo_f           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp F>; };
 		combo_g           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp G>; };
 		combo_u           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_I>; bindings = <&kp U>; };
@@ -365,9 +366,9 @@
 			label = "Symbol";
 			bindings = <
 				LEADING_NONES
-				&kp EXCL                                            &kp BSLH  &kp SEMI  &kp GRAVE
+				&kp HASH                                            &kp GRAVE  &kp SEMI  &kp BSLH
 				MIDDLE_NONES
-				&mo LAYER_ID_SYMBOLS                                &kp QMARK &kp MINUS &kp EQUAL
+				&mo LAYER_ID_SYMBOLS                                &kp AT &kp MINUS &kp EQUAL
 				TRAILING_NONES
 			>;
 		};
@@ -375,9 +376,9 @@
 			label = "Paren";
 			bindings = <
 				LEADING_NONES
-				&mo LAYER_ID_PARENTHETICALS                         &kp LPAR  &kp RPAR  &kp LBRC
+				&mo LAYER_ID_PARENTHETICALS                         &kp LPAR  &kp LBKT  &kp LBRC
 				MIDDLE_NONES
-				&none                                               &kp LBKT  &kp RBKT  &kp RBRC
+				&none                                               &kp RPAR  &kp RBKT  &kp RBRC
 				TRAILING_NONES
 			>;
 		};
