@@ -125,7 +125,7 @@
 #define TIMEOUT_COMBO_3 175
 #endif
 #if !defined TIMEOUT_COMBO_4
-#define TIMEOUT_COMBO_4 175
+#define TIMEOUT_COMBO_4 200
 #endif
 #if !defined TIMEOUT_LAYER_HOLD
 #define TIMEOUT_LAYER_HOLD 200
