@@ -259,6 +259,12 @@
 		combo_nine  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_N>; bindings = <&kp N9>; };
 		combo_zero  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_I>; bindings = <&kp N0>; };
 
+        combo_pipe { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp PIPE>; };
+		combo_amp { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp AMPERSAND>; };
+		combo_percent  { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_I>; bindings = <&kp PERCENT>; };
+		combo_tilde  { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp TILDE>; };
+
+
 		/*****************************************
 		 * 3 key combos
 		 *****************************************/
